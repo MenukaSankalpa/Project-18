@@ -115,3 +115,9 @@ nav{
     font-weight: 500;
     color: var(--white);
 }
+.nav__links a:hover{
+    color: var(--text-darK);
+}
+.nav__btn{
+    display: none;
+}
