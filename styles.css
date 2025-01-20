@@ -181,6 +181,29 @@ nav{
     margin-inline: auto;
     filter: drop-shadow(5px 20px 20px rgba(0, 0, 0, 0.5));
 }
+.header__container::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100vh;
+    height: 50%;
+    background-color: var(--primary-color);
+    transform: translateY(50%) skewY(-4deg);
+    z-index: -1;
+}
+.scroll__down{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    font-size: 1.5rem;
+    padding: 8px 5px;
+    color: var(--text-darK);
+    background-color: var(--primary-color);
+    border-radius: 2rem;
+    border: 8px solid var(--white);
+}
 
 @media (width > 768px){
     nav{
