@@ -8,3 +8,7 @@ menuBtn.addEventListener("click",(e) => {
     const isOpen = navLinks.classList.contains("open");
     menuBtnIcon.setAttribute("class", isopen?"ri-close-line" : "ri-menu-line")
 });
+
+navLinks.addEventListener("click", (e) => {
+    menuBtnIcon.setAttribute("class", "ri-menu-line");
+});
