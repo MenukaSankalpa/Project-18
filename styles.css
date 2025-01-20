@@ -42,3 +42,25 @@
     color: var(--text-darK);
     background-color: var(--primary-color);
 }
+img{
+    display: flex;
+    width: 100%;
+}
+a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+ul{
+    list-style: none;
+}
+html,
+body{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+header{
+    position: relative;
+    background-image: url("assets/header-bg.png");
+}
