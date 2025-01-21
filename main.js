@@ -31,3 +31,8 @@ ScrollReveal().reveal(".header__container img", {
     ...scrollRevealOption,
     delay: 1000,
 });
+
+ScrollReveal().reveal(".range__card", {
+    duration: 1000,
+    interval: 500,
+});
