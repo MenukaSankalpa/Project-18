@@ -374,6 +374,10 @@ nav{
 .select__btns .btn{
     min-width: 135px;
 }
+.select__btns .btn:nth-child(2){
+    color: var(--white);
+    background-color: var(--primary-color);
+}
 
 @media (width > 768px){
     nav{
@@ -430,6 +434,9 @@ nav{
     }
     .location__image{
         grid-area: 1/2/2/3;
+    }
+    .select__form{
+        justify-content: space-between;
     }
 }
 
