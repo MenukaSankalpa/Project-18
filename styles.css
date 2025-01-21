@@ -259,6 +259,23 @@ nav{
     color: var(--primary-color);
     border-color: var(--primary-color);
 }
+.location__container{
+    display: grid;
+    gap: 2rem 0;
+    overflow: hidden;
+}
+.location__image img{
+    max-width: 500px;
+    margin-inline: auto;
+    padding-inline: 1rem;
+}
+.location__content .section__header{
+    margin-bottom: 2rem;
+}
+.location__content p{
+    margin-bottom: 2rem;
+    color: var(--text-light);
+}
 
 @media (width > 768px){
     nav{
