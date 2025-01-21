@@ -326,6 +326,13 @@ nav{
     .range__grid{
         grid-template-columns: repeat(2, 1fr);
     }
+    .location__container{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+    .location__image{
+        grid-area: 1/2/2/3;
+    }
 }
 
 @media (width > 1024px){
