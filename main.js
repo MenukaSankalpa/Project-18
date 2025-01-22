@@ -61,8 +61,8 @@ const price = ["225", "455", "275", "625", "395"];
 
 const priceEl = document.getElementById("select-price");
 
-function updateSwiperImage(eventName, args){
-    if(eventName === "slideChangeTransitionsStart") {
+function updateSwiperImage(eventName, args) {
+    if(eventName === "slideChangeTransitionStart") {
         const index = args && args[0].realIndex;
         priceEl.innerText = price[index];
         selectCards.forEach((item) => {
@@ -77,9 +77,19 @@ const swiper = new Swiper(".swiper", {
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
-    slidePerView: "auto",
-    coverFlowEffect: {
+    slidesPerView: "auto",
+    coverflowEffect: {
         rotate: 0,
+        depth: 500,
+        modifier: 1,
+        scale: 0.75,
+        slideShadows: false,
+        stretch: -100,
         
-    }
+    },
+
+    onAny(event, ...args){
+        updateSwiperImage(event, args);
+
+    },
 });
