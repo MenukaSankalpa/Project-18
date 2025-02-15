@@ -377,6 +377,24 @@ nav{
 .select__btns .btn:nth-child(2){
     color: var(--white);
     background-color: var(--primary-color);
+} 
+.story__container .section__header{
+    max-width: 600px;
+    margin-inline: auto;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+.story__grid{
+    display: grid;
+    gap: 4rem 1rem;
+}
+.story__date{
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 2px solid var(--text-light);
 }
 
 @media (width > 768px){
