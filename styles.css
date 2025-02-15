@@ -440,7 +440,7 @@ nav{
 
 @keyframes scroll {
     to{
-        transform: translateX(calc(-50% - 4rem));
+        transform: translateX(calc(-80% - 4rem));
     }
 }
 

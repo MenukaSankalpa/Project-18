@@ -98,3 +98,12 @@ ScrollReveal().reveal(".story__grid", {
     ...scrollRevealOption,
     interval: 500,
 });
+
+const banner = document.getElementById(".banner__wrapper");
+const bannerContent = Array.from(banner.children);
+
+bannerContent.forEach((item) => {
+    const duplicateNode = item.cloneNode(true);
+    duplicateNode.setAttribute("aria-hidden", true);
+    banner.appendChild(duplicateNode);
+})
