@@ -466,6 +466,18 @@ nav{
     margin-bottom: 2rem;
     text-align: center;
 }
+.download__links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.download__links img{
+    max-width: 150px;
+}
+.download__image{
+    display: none;
+}
 
 
 @keyframes scroll {
@@ -541,6 +553,35 @@ nav{
     }
     .story__grid{
         grid-template-columns: repeat(3, 1fr);
+    }
+    .download__container{
+        max-width: 10rem;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+    .download__content{
+        max-width: 500px;
+        margin-left: auto; 
+    }
+    .download__content .section__header{
+        text-align: left;
+    }
+    .download__links{
+        justify-content: flex-start;
+    }
+    .download__image{
+        display: flex;
+        position: relative;
+        isolation: isolate;
+        height: 100%;
+    }
+    .download__image img{
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 400px;
     }
 }
 
