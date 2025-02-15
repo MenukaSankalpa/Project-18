@@ -93,3 +93,8 @@ const swiper = new Swiper(".swiper", {
 
     },
 });
+
+ScrollReveal().reveal(".story__grid", {
+    ...scrollRevealOption,
+    interval: 500,
+});
